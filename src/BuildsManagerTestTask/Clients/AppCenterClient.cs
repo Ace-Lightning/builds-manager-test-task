@@ -29,7 +29,7 @@ internal class AppCenterClient
 
         if (!response.IsSuccessStatusCode)
         {
-            throw new Exception($"Error has occurred while performing web request. Status code: {response.StatusCode}");
+            throw new Exception($"Performing web request failed. Status code: {response.StatusCode}");
         }
 
         var content = await response.Content.ReadAsStringAsync();

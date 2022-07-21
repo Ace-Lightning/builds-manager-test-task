@@ -63,7 +63,7 @@ foreach (BranchStatus branchStatus in configuredBranches)
     }
 }
 
-Console.WriteLine($"Stared {startedBuilds.Count} build(s)");
+Console.WriteLine($"Started {startedBuilds.Count} build(s)");
 
 if (startedBuilds.Count == 0)
 {
@@ -86,7 +86,7 @@ do
             catch (Exception ex)
             {
                 Console.WriteLine($"Error has occurred while updating status of build {startedBuilds[i].Id}: {ex.Message}");
-                // TODO: implement a cancelation checking of build status by timeout to avoid endless loop
+                // TODO: implement a cancelation for checking of build status by timeout to avoid endless loop
             }
         }
     }

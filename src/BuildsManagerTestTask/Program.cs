@@ -1,7 +1,7 @@
 ﻿using BuildsManagerTestTask.Clients;
 using BuildsManagerTestTask.Models;
 
-const string completeBuildStatus = "complete";
+const string completeBuildStatus = "completed";
 const string baseUri = "https://api.appcenter.ms";
 
 Console.WriteLine($"========= Build Manager for AppCenter ({DateTime.Now:g}) =========");

@@ -11,5 +11,5 @@ The application takes 3 parameters:
 3. API token which has access to specified application
 
 ```console
-BuildsManager.exe "owner name" "application name" "12345token54321"
+BuildManager.exe "owner name" "application name" "12345token54321"
 ```
